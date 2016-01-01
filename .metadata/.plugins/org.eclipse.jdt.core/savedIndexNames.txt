@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+/Users/liqingliu/Study/AndroidStudy/.metadata/.plugins/org.eclipse.jdt.core
+2937546493.index
+2804597516.index
+2661307943.index
+835057187.index

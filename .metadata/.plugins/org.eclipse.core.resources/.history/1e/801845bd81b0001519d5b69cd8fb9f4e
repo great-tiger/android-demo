@@ -1,0 +1,9 @@
+package com.example.android_service_download;
+
+public class DiskTools {
+	public static boolean SaveToDisk(String fileName,byte[] bytes) {
+		boolean flag=false;
+		
+		return flag;
+	}
+}

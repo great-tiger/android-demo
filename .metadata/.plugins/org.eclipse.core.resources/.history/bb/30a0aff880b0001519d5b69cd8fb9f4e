@@ -1,0 +1,5 @@
+package com.example.android_service_download;
+
+public class DiskTools {
+	
+}
