@@ -968,3 +968,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2016-01-01 19:47:57.246
 !MESSAGE Failed to load properties file for project 'android_service_download'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-01-01 22:38:08.286
+!MESSAGE Failed to load properties file for project 'android_service_intentService'
