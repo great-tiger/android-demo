@@ -1,6 +1,7 @@
 package com.example.android_service_intentservice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,8 +20,8 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+				Intent intent=new Intent(MainActivity.this,DownloadService.class);
+				startService(intent);
 			}
 		});
 	}

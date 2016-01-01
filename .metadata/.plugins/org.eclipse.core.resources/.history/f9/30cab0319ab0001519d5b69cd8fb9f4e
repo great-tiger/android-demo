@@ -1,0 +1,23 @@
+package com.example.android_service_intentservice;
+
+import android.app.IntentService;
+import android.content.Intent;
+
+public class DownloadService extends IntentService {
+
+	//这个构造函数必须要创建，并且super方法也必须调用
+    public DownloadService() {
+    	super("DownloadService");
+    }
+	
+    /**
+     * 主要在这个方法中处理intent
+     * 
+     */
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
