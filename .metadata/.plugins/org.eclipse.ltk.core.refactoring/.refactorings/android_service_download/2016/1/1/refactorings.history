@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DownLoadService.java&apos; to &apos;android_service_notification/src/com.example.android_service_notification&apos;&#x0A;- Original project: &apos;android_service_download&apos;&#x0A;- Destination element: &apos;android_service_notification/src/com.example.android_service_notification&apos;&#x0A;- Original element: &apos;com.example.android_service_download.DownLoadService.java&apos;" description="Copy compilation unit" destination="=android_service_notification/src&lt;com.example.android_service_notification" element1="/src&lt;com.example.android_service_download{DownLoadService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1451746054900" units="1" version="1.0"/>
+</session>
