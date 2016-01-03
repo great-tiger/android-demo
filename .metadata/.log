@@ -993,3 +993,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2016-01-03 11:26:19.309
 !MESSAGE Failed to load properties file for project 'android_service_messager'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-01-03 12:25:35.379
+!MESSAGE Failed to load properties file for project 'android_service_aidl'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-01-03 12:27:56.265
+!MESSAGE Failed to load properties file for project 'android_service_aidl_server'
