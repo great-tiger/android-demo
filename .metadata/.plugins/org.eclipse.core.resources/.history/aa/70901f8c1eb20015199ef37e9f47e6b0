@@ -1,0 +1,95 @@
+package com.example.android_webview_backforward;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
+
+public class MainActivity extends Activity implements OnClickListener {
+
+	Button back;
+	Button forward;
+	Button zoomin;
+	Button zoomout;
+	WebView webview;
+	final String URL="http://www.hao123.com";
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		back=(Button)this.findViewById(R.id.button1);
+		forward=(Button)this.findViewById(R.id.button2);
+		zoomin=(Button)this.findViewById(R.id.button3);
+		zoomout=(Button)this.findViewById(R.id.button4);
+		webview=(WebView)this.findViewById(R.id.webView1);
+		
+		back.setOnClickListener(this);
+		forward.setOnClickListener(this);
+		zoomin.setOnClickListener(this);
+		zoomout.setOnClickListener(this);
+		
+		webview.loadUrl(URL);
+		//webview.setWebViewClient(new TestWebViewClient());
+	}
+
+	public class TestWebViewClient extends WebViewClient{
+		@Override
+		public boolean shouldOverrideUrlLoading(WebView view, String url) {
+			view.loadUrl(url);
+			return true;
+		}
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.button1:
+			if(webview.canGoBack()){
+				webview.goBack();
+			}
+			break;
+		case R.id.button2:
+			if(webview.canGoForward()){
+				webview.goForward();
+			}
+			break;
+		case R.id.button3:
+			if(webview.canZoomIn()){
+				webview.zoomIn();
+			}
+			break;
+		case R.id.button4:
+			if(webview.canZoomOut()){
+				webview.zoomOut();
+			}
+			break;
+		default:
+			break;
+		}
+	}
+}
